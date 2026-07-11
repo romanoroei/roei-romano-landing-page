@@ -430,6 +430,22 @@ section { padding: 72px 0; }
   text-align: center;
 }
 
+/* ===== TikTok ===== */
+.tiktok-follow {
+  text-align: center;
+  margin: -18px 0 40px;
+}
+.tiktok-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.tiktok-grid .tiktok-embed {
+  margin: 0;
+  flex: 1 1 280px;
+}
+
 /* ===== Lead form ===== */
 .lead-section {
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
