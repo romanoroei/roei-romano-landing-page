@@ -464,10 +464,10 @@ section { padding: 72px 0; }
 .tiktok-item {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  max-width: 230px;
 }
 .tiktok-grid .tiktok-embed {
   margin: 0;
+  zoom: .82;
 }
 .tiktok-nav {
   flex: none;

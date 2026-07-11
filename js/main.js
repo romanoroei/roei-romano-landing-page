@@ -43,6 +43,15 @@
 
   prevBtn.addEventListener('click', function () { goTo(currentIndex() - 1); });
   nextBtn.addEventListener('click', function () { goTo(currentIndex() + 1); });
+
+  // Reaching the last video and pausing there loops back to the first, carousel-style.
+  var dwellTimer = null;
+  track.addEventListener('scroll', function () {
+    clearTimeout(dwellTimer);
+    dwellTimer = setTimeout(function () {
+      if (currentIndex() === items.length - 1) goTo(0);
+    }, 1800);
+  });
 })();
 
 // ===== Accessibility widget =====
