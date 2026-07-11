@@ -44,31 +44,6 @@
   prevBtn.addEventListener('click', function () { goTo(currentIndex() - 1); });
   nextBtn.addEventListener('click', function () { goTo(currentIndex() + 1); });
 
-  // Stop every video except the one currently in view by reloading its iframe
-  // (cross-origin TikTok embeds expose no pause API, so a reload is the only way in).
-  function stopItem(item) {
-    var frame = item.querySelector('iframe');
-    if (!frame || !frame.src) return;
-    var src = frame.src;
-    frame.src = 'about:blank';
-    setTimeout(function () { frame.src = src; }, 50);
-  }
-
-  var lastActive = currentIndex();
-  var activeTimer = null;
-  track.addEventListener('scroll', function () {
-    clearTimeout(activeTimer);
-    activeTimer = setTimeout(function () {
-      var idx = currentIndex();
-      if (idx !== lastActive) {
-        Array.prototype.forEach.call(items, function (item, i) {
-          if (i !== idx) stopItem(item);
-        });
-        lastActive = idx;
-      }
-    }, 300);
-  });
-
   // Reaching the last video and pausing there loops back to the first, carousel-style.
   var dwellTimer = null;
   track.addEventListener('scroll', function () {
