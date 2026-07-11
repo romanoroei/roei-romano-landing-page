@@ -15,6 +15,36 @@
   });
 })();
 
+// ===== TikTok carousel =====
+(function tiktokCarousel() {
+  var track = document.getElementById('tiktok-grid');
+  var prevBtn = document.querySelector('.tiktok-nav-prev');
+  var nextBtn = document.querySelector('.tiktok-nav-next');
+  if (!track || !prevBtn || !nextBtn) return;
+
+  var items = track.querySelectorAll('.tiktok-item');
+  if (!items.length) return;
+
+  function currentIndex() {
+    var trackEdge = track.getBoundingClientRect().right;
+    var closest = 0;
+    var closestDist = Infinity;
+    Array.prototype.forEach.call(items, function (item, i) {
+      var dist = Math.abs(item.getBoundingClientRect().right - trackEdge);
+      if (dist < closestDist) { closestDist = dist; closest = i; }
+    });
+    return closest;
+  }
+
+  function goTo(index) {
+    var wrapped = ((index % items.length) + items.length) % items.length;
+    items[wrapped].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+  }
+
+  prevBtn.addEventListener('click', function () { goTo(currentIndex() - 1); });
+  nextBtn.addEventListener('click', function () { goTo(currentIndex() + 1); });
+})();
+
 // ===== Accessibility widget =====
 (function a11yWidget() {
   var toggle = document.getElementById('a11y-toggle');

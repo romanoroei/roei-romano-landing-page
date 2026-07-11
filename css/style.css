@@ -445,20 +445,55 @@ section { padding: 72px 0; }
   height: 18px;
   flex: none;
 }
+.tiktok-carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .tiktok-grid {
   display: flex;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x proximity;
   padding: 4px 4px 16px;
   scrollbar-color: var(--gold) var(--offwhite);
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.tiktok-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  max-width: 230px;
 }
 .tiktok-grid .tiktok-embed {
   margin: 0;
-  flex: 0 0 auto;
-  scroll-snap-align: start;
 }
+.tiktok-nav {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(12,33,52,.12);
+  transition: background .15s ease, transform .15s ease;
+}
+.tiktok-nav:hover { background: var(--gold-light); transform: translateY(-2px); }
+.tiktok-nav::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: solid var(--navy-dark);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+.tiktok-nav-prev::before { transform: rotate(135deg); margin-right: -3px; }
+.tiktok-nav-next::before { transform: rotate(-45deg); margin-left: -3px; }
 
 /* ===== Lead form ===== */
 .lead-section {
