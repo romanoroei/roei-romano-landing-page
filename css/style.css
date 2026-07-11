@@ -486,20 +486,10 @@ section { padding: 72px 0; }
 .tiktok-item {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  width: 190px;
-  height: 250px;
-  overflow: hidden;
-  position: relative;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  background: var(--navy-dark);
 }
 .tiktok-grid .tiktok-embed {
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  zoom: .78;
 }
 .tiktok-nav {
   flex: none;
