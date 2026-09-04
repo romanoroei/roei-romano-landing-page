@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romanoroei.github.io/roei-romano-landing-page/sitemap.xml
