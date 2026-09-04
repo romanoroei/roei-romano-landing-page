@@ -209,8 +209,8 @@ h1, h2, h3, h4 { margin: 0 0 .6em; line-height: 1.25; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   width: 100%;
-  max-width: 380px;
-  aspect-ratio: 3/4;
+  max-width: 340px;
+  aspect-ratio: 4/5;
   object-fit: cover;
   border: 3px solid rgba(201,183,114,.35);
 }
@@ -281,8 +281,9 @@ section { padding: 72px 0; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 5/6;
   object-fit: cover;
+  object-position: center 28%;
 }
 .about-text p { margin: 0 0 1.1em; font-size: 1.05rem; color: #2b3947; }
 .about-text strong { color: var(--navy); }
