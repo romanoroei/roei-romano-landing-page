@@ -1,13 +1,13 @@
 # רועי רומנו — תכנון פנסיוני ופיננסי
 
-אתר התדמית הרשמי של רועי רומנו, סוכן פנסיוני מורשה מספר 0011716 ומתכנן פיננסי הפועל בשיתוף סוכנות ארביטראז'. האתר מציג מידע על תהליך הליווי, ניסיון מקצועי, שאלות נפוצות ודרכי יצירת קשר.
+אתר התדמית הרשמי של רועי רומנו, סוכן פנסיוני מורשה מספר 00117164 ומתכנן פיננסי הפועל בשיתוף סוכנות ארביטראז'. האתר מציג מידע על תהליך הליווי, ניסיון מקצועי, שאלות נפוצות ודרכי יצירת קשר.
 
 ## עמודים מרכזיים
 
-- [העמוד הראשי](https://romanoroei.github.io/roei-romano-landing-page/): שירותים, אודות, תהליך העבודה, שאלות נפוצות ויצירת קשר.
-- [גילוי נאות](https://romanoroei.github.io/roei-romano-landing-page/disclosure.html)
-- [מדיניות פרטיות](https://romanoroei.github.io/roei-romano-landing-page/privacy.html)
-- [הצהרת נגישות](https://romanoroei.github.io/roei-romano-landing-page/accessibility.html)
+- [העמוד הראשי](https://romanoinvest.co.il/): שירותים, אודות, תהליך העבודה, שאלות נפוצות ויצירת קשר.
+- [גילוי נאות](https://romanoinvest.co.il/disclosure)
+- [מדיניות פרטיות](https://romanoinvest.co.il/privacy)
+- [הצהרת נגישות](https://romanoinvest.co.il/accessibility)
 
 ## ייחוס מועדף
 
